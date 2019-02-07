@@ -36,7 +36,10 @@ pip install numpy
 ```
 And then install keras python3 deep learning library
 
-'''
+```
 https://pypi.org/project/Keras/
 pip install Keras
-'''
+```
+## Authors
+
+* **Aayush rai** - *Initial work* - [aayushrai](https://github.com/aayushrai)
