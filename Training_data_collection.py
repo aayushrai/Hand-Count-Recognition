@@ -1,20 +1,20 @@
 import cv2,random
 import os
 
-camera = cv2.VideoCapture(0)
+camera = cv2.VideoCapture(0)            # it's capture images 
 def block(frame):
     block = frame[165:415,365:595]
     block = cv2.medianBlur(block,7)
     ret,block = cv2.threshold(block,127,255,cv2.THRESH_BINARY)
     cv2.imshow("block", block)
     return block
-def Ablock(frame):
+def Ablock(frame):                  # Ablock function return specific block of image and show in side window.
     block = frame[165:415,365:595]
-    block = cv2.medianBlur(block,3)
+    block = cv2.medianBlur(block,3)   # this function blur image which help in remove noise in image.
     block = cv2.adaptiveThreshold(block,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,199,8)
     cv2.imshow("Ablock", block)
     return block
-def create_folder(lis):
+def create_folder(lis):    # define create_folder function to create folder for collection of images.
     os.getcwd()
     for i in lis:
         if not os.path.exists("hand"):
@@ -25,7 +25,7 @@ def create_folder(lis):
 create_folder([0,1,2,3,4,5])
 
 while True:
-    rand = random.randint(0,10000)
+    rand = random.randint(0,10000)                 #just create random number.
     file = []
     for i in range(len(os.listdir("hand\\"))):
         file.append(len(os.listdir("hand\\"+ str(i))))
@@ -33,7 +33,7 @@ while True:
 
     ret,frame = camera.read()
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    if ret:
+    if ret:                                                # Showing number of images in each folder on camera window.
         cv2.putText(frame,"zero:"+str(file[0]), (10,40), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         cv2.putText(frame, "one:" + str(file[1]), (10, 70), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
         cv2.putText(frame, "two:" + str(file[2]), (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2,cv2.LINE_AA)
@@ -50,7 +50,7 @@ while True:
     if cv2.waitKey(20) & 0xFF == 27:
         break
 
-    if cv2.waitKey(30) & 0xFF == ord("0"):
+    if cv2.waitKey(30) & 0xFF == ord("0"):                     # when we click key on keyboard then image save in specific folder according to key.
          print("hand\\0\\{}.jpeg".format(file[0]+rand))
          cv2.imwrite("hand\\0\\{}.jpeg".format(file[0]+rand),Ablock2)
     if cv2.waitKey(30) & 0xFF == ord("1"):
