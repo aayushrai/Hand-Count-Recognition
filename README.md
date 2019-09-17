@@ -4,7 +4,11 @@ Design to recognition Hand Count using **Convolutional Neural Network**.
 
 # Project images
 
-![image](https://imgflip.com/gif/3asael)
+# Prediction
+![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/prediction_gif.gif)
+
+# Training
+![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/T_image.jpg)
 
 ## Details
 
