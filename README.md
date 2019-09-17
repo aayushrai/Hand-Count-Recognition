@@ -2,17 +2,21 @@
 
 Design to recognition Hand Count using **Convolutional Neural Network**.
 
-# Project images
-
-# Prediction
-![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/prediction_gif.gif)
-
-# Training
-![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/T_image.jpg)
-
 ## Details
 
-**Opencv Python3 Module** 
+For image processing and data collection **Opencv Python3 Module** used. Apply different image **Thresholding** technique to remove the unnecessary information from the image which is not required for hand count recognization and after thresholding only those information remains which is required.Thresholding is a technique in OpenCV, which is the assignment of pixel values in relation to the threshold value provided. In thresholding, each pixel value is compared with the threshold value. If the pixel value is smaller than the threshold, it is set to 0, otherwise, it is set to a maximum value (generally 255).
+
+### Threshold image
+![](https://answers.opencv.org/upfiles/13506303131033303.png)
+
+# Project images
+
+### Prediction
+![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/prediction_gif.gif)
+
+### Training
+![](https://github.com/aayushrai/Hand-Count-Recognition/blob/master/T_image.jpg)
+
 
 ### Installing
 
