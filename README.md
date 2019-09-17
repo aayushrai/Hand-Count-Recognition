@@ -1,18 +1,18 @@
 # Hand-Count-Recognition
 
-Design to recognition Hand Count using **Deep learning CNN Model**.
+Design to recognition Hand Count using **Convolutional Neural Network**.
 
 # Hand Count Example
 
-![image](https://github.com/aayushrai/Automated_attendence/blob/master/images/1.PNG)
+![image](https://www.jonnyhatesmarketing.com/wp-content/uploads/2019/01/5-steps-1080x675.jpg)
 
 ## Details
 
-This project has four files KerasModel.py ,Prediction.py ,Training_data_collection.py ,hand.h5, Training_data_collection.py file contains code for collection of training data. Training data refer collection of hand image which use to train CNN keras model.
+Project contains four files.Training_data_collection file contains code for collection of training data. Training data refer as collection of different hand count which use for train **Convolutional Neural Network**.
 
-**Opencv Python3 Module** for collection of image data and image processing. KerasModel.py file contain code for **CNN Deep Learning Model** which use create weight, with the help of this weight we can recognize hand count. 
+**Opencv Python3 Module** used for collection of image data and image processing. KerasModel.py file contain code for **CNN Deep Learning Model** which use create weight, with the help of this weight we can recognize hand count. 
 
-Prediction.py file use to predict hand count by showing hand in camera, prediction file use weight for prediction. weight save in hand.h5 file.
+Prediction.py file use to predict hand count, prediction file use weight for prediction. weight save in hand.h5 file.
 
 ### Installing
 
