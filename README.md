@@ -2,17 +2,13 @@
 
 Design to recognition Hand Count using **Convolutional Neural Network**.
 
-# Hand Count Example
+# Project images
 
-![image](https://www.jonnyhatesmarketing.com/wp-content/uploads/2019/01/5-steps-1080x675.jpg)
+![image](https://imgflip.com/gif/3asael)
 
 ## Details
 
-Project contains four files.Training_data_collection file contains code for collection of training data. Training data refer as collection of different hand count which use for train **Convolutional Neural Network**.
-
-**Opencv Python3 Module** used for collection of image data and image processing. KerasModel.py file contain code for **CNN Deep Learning Model** which use create weight, with the help of this weight we can recognize hand count. 
-
-Prediction.py file use to predict hand count, prediction file use weight for prediction. weight save in hand.h5 file.
+**Opencv Python3 Module** 
 
 ### Installing
 
